@@ -20,12 +20,10 @@
 
 .main {
     text-align: center;
-    background-color: #ebebeb;
-}
-
-.main {
+    background-color: #e7e7e7;
     padding-top: 25px;
 }
+
 .mediosdepago {
     width: 90%;
     height: 100px;
@@ -50,3 +48,160 @@
     grid-row: 1 / 3;
 }
 
+
+.cards__container {
+    display: grid;
+
+    width: 90%;
+    height: 100%;
+
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 8px;
+}
+
+.card {
+    width: 100%;
+    height: 50vh;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1);
+}
+
+.advertisings__container {
+    display: grid;
+
+    width: 90%;
+
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+}
+
+.advertising__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    height: 35vh;
+ 
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1);
+}
+
+.store__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8px;
+    width: 90%;
+    margin: 0 auto;
+}
+.store__card {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1);
+}
+.sore__card--logo {
+    position: relative;
+    width: 50px;
+    height: 50px;   
+}
+
+.main2 {
+    text-align: center;
+    background-color: #dfdfdf;
+}
+
+.oferts2 {
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+}
+.oferts2__card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.ofert2__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    height: 35vh;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1); 
+}
+
+.categories {
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.categories__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+
+    background-color: #fff;
+}
+.category__box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color:  rgba(0,0,0,0.1);
+    border-left: unset;
+    border-top: unset;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.regret {
+    display: flex;
+    flex-direction: row;
+
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.information {
+    background: #f7f7f7;
+}
+.information__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    width: 80%;
+    height: 300px;
+
+    margin: 0 auto;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
