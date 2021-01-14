@@ -1,9 +1,14 @@
+@font-face {
+    font-family: proximaNovaThin;
+    src: url(/arc/proxima/ProximaNovaThin.otf);
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
     font-family: Arial, Helvetica, sans-serif;
+    font-family: proximaNovaThin;
 }
 .header div a,
 .header div div a
@@ -144,24 +149,30 @@
 
 .carrousel {
     width: 100%;
-    height: 55vh;
-    background-color: #232f48;
+    height: 340px;
+    background-color: #e7e7e7;
+}
+
+.carrousel img {
+    margin: auto;
+    display: block;
 }
 
 .main {
-    text-align: center;
     background-color: #e7e7e7;
     padding-top: 25px;
 }
 
 .mediosdepago {
-    width: 90%;
-    height: 100px;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+
     margin: 0 auto;
+
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 1px 0 rgb(0,0,0,0.1);
@@ -169,22 +180,50 @@
 
 .mediosdepago__container{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: max-content max-content;
     grid-template-rows: 1fr 1fr;
 }
-
 .mediosdepago--icon {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+
+    justify-self: center;
+    align-self: center;
+} 
+.mediosdepago--title {
+    display: inline-block;
+    align-self: flex-end;
+    font-size: 18px;
+}
+.mediosdepago--seemore {
+    text-decoration: none;
+    font-size: 14px;
+    color: #3483FA;
 }
 
-
+.ofert {
+    margin: 60px 0;
+}
+.ofert-titles {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+.ofert h2 {
+    display: inline-block;
+    font-size: 26px;
+    color: #666666;
+}
+.ofert a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: #3483FA;
+}
 .cards__container {
     display: grid;
 
     grid-template-columns: repeat(5, 1fr);
 
-    width: 90%;
+    max-width: 1200px;
     height: 100%;
 
     margin: 0 auto;
@@ -194,108 +233,315 @@
 
 .card {
     width: 100%;
-    height: 50vh;
+    height: 330px;
 
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1);
 }
+.ofert__card--img-container {
+    width: 224px;
+    height: 224px;
+}
+.ofert__card--truck-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.advertisings__container {
-    display: grid;
+    position: relative;
 
-    width: 90%;
+    width: 36px;
+    height: 36px;
 
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8px;
+    background-color: #fff;
+    border: 1px solid rgba(51,51,51,.1);
+    border-radius: 50%;
+}
+.ofert__card--truck-icon {
+    width: 20px;
+    height: 20px;
+
+    fill: #39b54a;
 }
 
+.ofert__card--discount {
+    display: none;
+
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+    color: #999999;
+}
+.ofert__card--price {
+    display: inline-block;
+    font-size: 23px;
+    color: #333333;
+}
+.ofert__card--off {
+    display: inline-block;
+    font-size: 14px;
+    color: #39b54A;
+}
+.ofert__card--description {
+    display: none;
+    font-size: 14px;
+    color: #666666;
+}
+.ofert__card--payment {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+}
+
+.advertising {
+    margin: 60px 0;
+}
+.advertisings__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+
+    width: 1200px;
+    height: 265px;
+
+    margin: 0 auto;
+}
+.advertising-titles {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+.advertising-titles h2  {
+    display: inline-block;
+    font-size: 26px;
+    color: #666666;
+}
 .advertising__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     width: 100%;
-    height: 35vh;
+    height: 100%;
  
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1);
 }
+.advertising__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
 
+    margin: 0 32px 0 0;
+    padding: 32px 0 32px 32px;
+}
+.advertising__info--title {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+.advertising__info--description {
+    text-align: left;
+    font-size: 28px;
+}
+.advertising__info--seemore {
+    width: 96px;
+    height: 36px;
+
+    margin-top: 13px;
+    padding: 9px 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: #fff;
+    background-color: #3483fa;
+}
+.advertising__info--img {
+    width: 100%;
+    height: 100%;
+}
+.stores {
+    margin: 60px 0 0;
+}
 .store__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 8px;
-    width: 90%;
+    
+    max-width: 1200px;
     margin: 0 auto;
 }
+.stores-titles {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+.stores-titles h2  {
+    display: inline-block;
+    font-size: 26px;
+    color: #666666;
+}
+.stores-titles a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: #3483FA;
+}
 .store__card {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
+    max-width: 284px;
+    height: 340px;
 
-    width: 100%;
-    height: 50vh;
+    text-align: center;
+        
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1);
 }
-.sore__card--logo {
+.store__card--img {
+    max-width: 284px;
+    height: 100%;
+    max-height: 95px;
+    object-fit: cover;
+}
+.store__card--logo {
+    display: inline-block;
     position: relative;
-    width: 50px;
-    height: 50px;   
+    top: -30px;
+    right: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;  
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 5px rgba(0,0,0, 0.1)
+}
+.store__card--title {
+    display: block;
+    margin: -16px 0 16px;
+    padding: 0 16px
+}
+.store-products {
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0, 0.1);
+}
+.store__card--seeshop {
+    display: block;
+
+    margin: 15px 0 0;
+    text-decoration: none;
+    font-size: 15px;
+    color: #999999;  
+    font-weight: bold;
 }
 
 .main2 {
-    text-align: center;
+    padding-bottom: 30px;
     background-color: #dfdfdf;
 }
-
 .oferts2 {
-    width: 90vw;
+    max-width: 1200px;
     height: 100%;
+
     margin: 0 auto;
+    padding: 60px 0 0;
+}
+.ofert2-titles {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+.ofert2-titles h1 {
+    display: inline-block;
+    font-size: 26px;
+    color: #666666;
 }
 .oferts2__card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
 }
-
 .ofert2__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    width: 100%;
-    height: 35vh;
-
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1); 
 }
+.ofert2__card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
 
+    margin: 0 32px 0 0;
+    padding: 32px 0 32px 32px;
+}
+.ofert2__card--title {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+.ofert2__card--description {
+    text-align: left;
+    font-size: 28px;
+}
+.ofert2__card--seemore {
+    width: 96px;
+    height: 36px;
+
+    margin-top: 13px;
+    padding: 9px 10px;
+    
+    text-align: center;
+
+    text-decoration: none;
+    color: #fff;
+    background-color: #3483fa;
+}
+.ofert2__card img {
+    width: 100%;
+    height: auto;
+}
 .categories {
-    width: 90vw;
+    width: 1200px;
     height: 100%;
-    margin: 0 auto;
+    margin: 60px auto;
 }
-
+.categories-titles {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+.categories-titles h2 {
+    display: inline-block;
+    font-size: 26px;
+    color: #666666;
+}
 .categories__container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 170px 170px;
 
     background-color: #fff;
 }
 .category__box {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+
+    padding: 12px;
 
     border-style: solid;
     border-width: 2px;
     border-color:  rgba(0,0,0,0.1);
     border-left: unset;
     border-top: unset;
+}
+.category__box--icon {
+    justify-self: center;
+    align-self: flex-end;
+    width: 48px;
+    height: 48px;
+    
+    fill: #3483FA;
+   
+}
+.category__box--title h2 {
+    margin: 10px 0 0;
+    font-size: 15px;
+    color: #333333;
 }
 
 .info-container {

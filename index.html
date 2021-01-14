@@ -49,49 +49,85 @@
     </section>
 
     <section class="carrousel">
+        <img src="/arc/carrousel1.webp" alt="oferts">
     </section>
 
     <main class="main">
         <section class="mediosdepago">
-            <div class="mediosdepago__credito mediosdepago__container">
-                <i class="mediosdepago__credito--icon mediosdepago--icon"></i>
-                <h2 class="mediosdepago__credito--title mediosdepago--title">Tarjeta de credito</h2>
-                <a href="" class="mediosdepago__credito--seemore mediosdepago--seemore">Ver promociones bancarias</a>
+            <div class="mediosdepago__credit mediosdepago__container">
+                <a href="#" class="mediosdepago--icon">
+                <img src="arc/credit-card.svg" >
+                </a>
+                <h2 class="mediosdepago--title">Tarjeta de credito</h2>
+                <a href="" class="mediosdepago__credit--seemore mediosdepago--seemore">Ver promociones bancarias</a>
             </div> 
 
-            <div class="mediosdepago__debito mediosdepago__container">
-                <i class="mediosdepago__debito--icon mediosdepago--icon"></i>
-                <h2 class="mediosdepago__debito--title mediosdepago--title">Tarjeta de debito</h2>
-                <a href="" class="mediosdepago__debito--seemore mediosdepago--semore">Ver mas</a>
+            <div class="mediosdepago__debit mediosdepago__container">
+                <a href="#" class="mediosdepago--icon">
+                    <img src="/arc/debit-card.svg">
+                </a>               
+                <h2 class="mediosdepago--title">Tarjeta de debito</h2>
+                <a href="" class="mediosdepago__debit--seemore mediosdepago--seemore">Ver mas</a>
             </div> 
 
-            <div class="mediosdepago__efectivo mediosdepago__container--container">
-                <i class="mediosdepago__efectivo--icon mediosdepago--icon"></i>
-                <h2 class="mediosdepago__efectivo--title mediosdepago--title">Efectivo</h2>
-                <a href="" class="mediosdepago__efectivo--seemore mediosdepago--seemore">Ver mas</a>
+            <div class="mediosdepago__cash mediosdepago__container">
+                <a href="#" class="mediosdepago--icon">
+                <img src="/arc/payment-agreement.svg">
+                </a>
+                <h2 class="mediosdepago--title">Efectivo</h2>
+                <a href="" class="mediosdepago__cash--seemore mediosdepago--seemore">Ver mas</a>
             </div> 
 
-            <div class="mediosdepago__medios">
-                <i class="mediosdepago__medios--icon"></i>  
-                <h2 class="mediosdepago__medios--title">Mas medios de pago</h2>
-                <a href="" class="mediosdepago__medios--seemore">Ver todos</a>
+            <div class="mediosdepago__view-more mediosdepago__container">
+                <a href="#" class="mediosdepago--icon">
+                <img src="/arc/view-more.svg" class="mediosdepago__medios--icon">  
+                </a>
+                <h2 class="mediosdepago--title">Mas medios de pago</h2>
+                <a href="" class="mediosdepago--seemore">Ver todos</a>
             </div> 
 
         </section>
     
         <section class="ofert">
-            <h2 class="ofert__title">Ofertas</h2>
-            <a href="#">Ver todas</a>
-
+            <div class="ofert-titles">
+                <h2 class="ofert__title">Ofertas</h2>
+                <a href="#">Ver todas</a>    
+            </div>
+    
             <div class="cards__container">
                 <div class="card">
                     <a class="ofert__card">
                         <div class="ofert__card--img-container">
-                            <img src="#" alt="Alto celular Amigo" class="ofert--card--img">
+                            <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
                             <i class="ofert__card--heart"></i>
                         </div>
-                        <img src="" alt="truck" class="ofert__card--icon">
-        
+                        <div class="ofert__card--truck-container">
+                            <svg class="ofert__card--truck-icon" viewBox="0 0 39 32">
+                                <path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
+                            </svg>            
+                        </div>
+                        <div class="ofert__card--txt-container">
+                            <span class="ofert__card--discount">$43.999</span>
+                            <span class="ofert__card--price">$39.999</span>
+                            <span class="ofert__card--off">9% OFF</span>
+                            <span class="ofert__card--payment">18x $3.055,5 sin interes</span>
+                            <p class="ofert__card--description">
+                                Samsung Libre Galaxy A51 128 Gb 4Gb Black
+                            </p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="card">
+                    <a class="ofert__card">
+                        <div class="ofert__card--img-container">
+                            <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
+                            <i class="ofert__card--heart"></i>
+                        </div>
+                        <div class="ofert__card--truck-container">
+                            <svg class="ofert__card--truck-icon" viewBox="0 0 39 32">
+                                <path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
+                            </svg>            
+                        </div>
                         <div class="ofert__card--txt-container">
                             <h3 class="ofert__card--discount">$43.999</h3>
                             <h2 class="ofert__card--price">$39.999</h2>
@@ -105,11 +141,14 @@
                 <div class="card">
                     <a class="ofert__card">
                         <div class="ofert__card--img-container">
-                            <img src="#" alt="Alto celular Amigo" class="ofert--card--img">
+                            <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
                             <i class="ofert__card--heart"></i>
                         </div>
-                        <img src="" alt="truck" class="ofert__card--icon">
-        
+                        <div class="ofert__card--truck-container">
+                            <svg class="ofert__card--truck-icon" viewBox="0 0 39 32">
+                                <path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
+                            </svg>            
+                        </div>
                         <div class="ofert__card--txt-container">
                             <h3 class="ofert__card--discount">$43.999</h3>
                             <h2 class="ofert__card--price">$39.999</h2>
@@ -123,11 +162,14 @@
                 <div class="card">
                     <a class="ofert__card">
                         <div class="ofert__card--img-container">
-                            <img src="#" alt="Alto celular Amigo" class="ofert--card--img">
+                            <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
                             <i class="ofert__card--heart"></i>
                         </div>
-                        <img src="" alt="truck" class="ofert__card--icon">
-        
+                        <div class="ofert__card--truck-container">
+                            <svg class="ofert__card--truck-icon" viewBox="0 0 39 32">
+                                <path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
+                            </svg>            
+                        </div>
                         <div class="ofert__card--txt-container">
                             <h3 class="ofert__card--discount">$43.999</h3>
                             <h2 class="ofert__card--price">$39.999</h2>
@@ -141,29 +183,14 @@
                 <div class="card">
                     <a class="ofert__card">
                         <div class="ofert__card--img-container">
-                            <img src="#" alt="Alto celular Amigo" class="ofert--card--img">
+                            <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
                             <i class="ofert__card--heart"></i>
                         </div>
-                        <img src="" alt="truck" class="ofert__card--icon">
-        
-                        <div class="ofert__card--txt-container">
-                            <h3 class="ofert__card--discount">$43.999</h3>
-                            <h2 class="ofert__card--price">$39.999</h2>
-                            <h4 class="ofert__card--off">9% OFF</h4>
-                            <p class="ofert__card--description">
-                                Samsung Libre Galaxy A51 128 Gb 4Gb Black
-                            </p>
+                        <div class="ofert__card--truck-container">
+                            <svg class="ofert__card--truck-icon" viewBox="0 0 39 32">
+                                <path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
+                            </svg>            
                         </div>
-                    </a> 
-                </div>
-                <div class="card">
-                    <a class="ofert__card">
-                        <div class="ofert__card--img-container">
-                            <img src="#" alt="Alto celular Amigo" class="ofert--card--img">
-                            <i class="ofert__card--heart"></i>
-                        </div>
-                        <img src="" alt="truck" class="ofert__card--icon">
-        
                         <div class="ofert__card--txt-container">
                             <h3 class="ofert__card--discount">$43.999</h3>
                             <h2 class="ofert__card--price">$39.999</h2>
@@ -178,121 +205,736 @@
         </section>
     
         <section class="advertising">
-            <h2 class="advertising-title">Descubri</h2>
+            <div class="advertising-titles">
+                <h2>Descubri</h2>
+            </div>
             <div class="advertisings__container">
                 <div class="advertising__container">
                     <div class="advertising__info">
-                        <h1 class="advertising__info--title">Herramientas</h1>
-                        <h3 class="advertising__info--description">ESO QUE BUSCAS</h3>
-                        <a href="" class="advertising__info--seemore">Ver mas</a>
+                        <h1 class="advertising__info--title">HERRAMIENTAS</h1>
+                        <h3 class="advertising__info--description">ESO QUE</br>BUSCAS</h3>
+                        <a href="/" class="advertising__info--seemore">Ver mas</a>
                     </div>
-                    <img src="/" alt="la mejor del mndo" class="advertising__info--img">
+                    <img src="/arc/taladro.webp" alt="la mejor del mndo" class="advertising__info--img">
                 </div>
                 <div class="advertising__container">
                     <div class="advertising__info">
-                        <h1 class="advertising__info--title">Herramientas</h1>
-                        <h3 class="advertising__info--description">ESO QUE BUSCAS</h3>
+                        <h1 class="advertising__info--title">HERRAMIENTAS</h1>
+                        <h3 class="advertising__info--description">ESO QUE</br>BUSCAS</h3>
                         <a href="" class="advertising__info--seemore">Ver mas</a>
                     </div>
-                    <img src="/" alt="la mejor del mndo" class="advertising__info--img">
+                    <img src="/arc/taladro.webp" alt="la mejor del mndo" class="advertising__info--img">
                 </div>                           
             </div>
         </section>
     
         <section class="stores">
-            <h2 class="stores--titles">Las mejores tiendas te espera</h2>
-            <a href="#" class="stores--seeshops">Ver tiendas</a>
+            <div class="stores-titles">
+                <h2 >Las mejores tiendas te espera</h2>
+                <a href="#">Ver tiendas</a>
+            </div>
+
             <div class="store__container">
+
                 <div class="store__card">
-                    <img src="/" alt="la psota" class="store__card--img">
-                    <div class="store__card--container">
-                        <img src="/" alt="logo" class="store__card--logo">
-                        <h2 class="store__card--title">Citroen</h2>
-                        <div class="store__products-container">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                        </div>
-                        <a href="/" class="store__card--seeshop">Ver tienda</a>
+
+                    <img src="/arc/citroenbackground.jpg" alt="la posta" class="store__card--img">
+                      
+                    <img src="/arc/citroen.webp" alt="logo" class="store__card--logo">
+                    <h2 class="store__card--title">Citröen</h2>
+
+                    <div class="store__products-container">
+                        <img src="/arc/citroenproducto1.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto2.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto3.webp" alt="productos" class="store-products">
                     </div>
+                    
+                    <a href="/" class="store__card--seeshop">Ver tienda</a>
+        
                 </div>
                 <div class="store__card">
-                    <img src="/" alt="la psota" class="store__card--img">
-                    <div class="store__card--container">
-                        <img src="/" alt="logo" class="store__card--logo">
-                        <h2 class="store__card--title">Citroen</h2>
-                        <div class="store__products-container">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                        </div>
-                        <a href="/" class="store__card--seeshop">Ver tienda</a>
+
+                    <img src="/arc/citroenbackground.jpg" alt="la posta" class="store__card--img">
+                      
+                    <img src="/arc/citroen.webp" alt="logo" class="store__card--logo">
+                    <h2 class="store__card--title">Citröen</h2>
+
+                    <div class="store__products-container">
+                        <img src="/arc/citroenproducto1.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto2.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto3.webp" alt="productos" class="store-products">
                     </div>
+                    
+                    <a href="/" class="store__card--seeshop">Ver tienda</a>
+        
                 </div>
                 <div class="store__card">
-                    <img src="/" alt="la psota" class="store__card--img">
-                    <div class="store__card--container">
-                        <img src="/" alt="logo" class="store__card--logo">
-                        <h2 class="store__card--title">Citroen</h2>
-                        <div class="store__products-container">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                        </div>
-                        <a href="/" class="store__card--seeshop">Ver tienda</a>
+
+                    <img src="/arc/citroenbackground.jpg" alt="la posta" class="store__card--img">
+                      
+                    <img src="/arc/citroen.webp" alt="logo" class="store__card--logo">
+                    <h2 class="store__card--title">Citröen</h2>
+
+                    <div class="store__products-container">
+                        <img src="/arc/citroenproducto1.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto2.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto3.webp" alt="productos" class="store-products">
                     </div>
-                </div>            
+                    
+                    <a href="/" class="store__card--seeshop">Ver tienda</a>
+        
+                </div>
                 <div class="store__card">
-                    <img src="/" alt="la psota" class="store__card--img">
-                    <div class="store__card--container">
-                        <img src="/" alt="logo" class="store__card--logo">
-                        <h2 class="store__card--title">Citroen</h2>
-                        <div class="store__products-container">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                            <img src="/" alt="productos" class="store_products">
-                        </div>
-                        <a href="/" class="store__card--seeshop">Ver tienda</a>
+
+                    <img src="/arc/citroenbackground.jpg" alt="la posta" class="store__card--img">
+                      
+                    <img src="/arc/citroen.webp" alt="logo" class="store__card--logo">
+                    <h2 class="store__card--title">Citröen</h2>
+
+                    <div class="store__products-container">
+                        <img src="/arc/citroenproducto1.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto2.webp" alt="productos" class="store-products">
+                        <img src="/arc/citroenproducto3.webp" alt="productos" class="store-products">
                     </div>
-                </div>            
+                    
+                    <a href="/" class="store__card--seeshop">Ver tienda</a>
+        
+                </div>
+      
             </div>
         </section>
     </main>
 
     <div class="main2">
+
         <section class="oferts2">
-            <h1 class="oferts2--title">Te puede interesar</h1>
+            <div class="ofert2-titles">
+                <h1>Te puede interesar</h1>
+            </div>           
             <div class="oferts2__card-container">
                 <div class="ofert2__card">
                     <div class="ofert2__card-info">
-                        <h1 class="ofert2__card--title">Electronica</h1>
-                        <h3 class="ofert2__card--description">Lo mejor en tecnologia</h3>
+                        <h1 class="ofert2__card--title">DEPORTES</h1>
+                        <h3 class="ofert2__card--description">TODO EN</br>FUTBOL</h3>
                         <a href="/" class="ofert2__card--seemore">Ver mas</a>
                     </div>
-                    <img src="/" alt="producto" class="ofert2__card--img">
+                    <img src="/arc/futbol.webp" alt="producto" class="ofert2__card--img">
                 </div>
-                <div class="ofert2__card">
+            <div class="ofert2__card">
+                    
                     <div class="ofert2__card-info">
-                        <h1 class="ofert2__card--title">Electronica</h1>
-                        <h3 class="ofert2__card--description">Lo mejor en tecnologia</h3>
+                        <h1 class="ofert2__card--title">DEPORTES</h1>
+                        <h3 class="ofert2__card--description">TODO EN</br>FUTBOL</h3>
                         <a href="/" class="ofert2__card--seemore">Ver mas</a>
                     </div>
-                    <img src="/" alt="producto" class="ofert2__card--img">
-                </div>
+
+                    <img src="/arc/futbol.webp" alt="producto" class="ofert2__card--img">
+            </div>
+
             </div>
         </section>
     
         <section class="categories">
-            <h2 class="categories--title">Categorias populares</h2>
+            <div class="categories-titles">
+                <h2>Categorías populares</h2>
+            </div>
+
             <div class="categories__container">
+
                 <div class="category__box">
-                    <img src="/" alt="icon" class="category__box--icon">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
                     <div class="category__box--title">
                         <h2>Entradas para eventos</h2>
                     </div>
                 </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <svg class="category__box--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 468 468" style="enable-background:new 0 0 468 468;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+                    </g></svg>
+                    <div class="category__box--title">
+                        <h2>Entradas para eventos</h2>
+                    </div>
+                </div>
+                
+                
+                </div>
             </div>
-        </section>    
+        </section> 
+
     </div>
 
     <section class="section-info">
