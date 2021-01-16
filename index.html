@@ -13,10 +13,10 @@
                 <div>
                     <a href="/" class="header--logo-ml">LOGO</a>
                 </div>
-                <a href="/" class="navbar-left__placeholder">
+                <a href="/" class="navbar-left__bottom">
                     <img src="/arc/placeholder.png" alt="placeholder">
-                    <span class="navbar-left__placeholder--sendto">Enviar a: </span>
-                    <span class="navbar-left__placeholder--location">Capital Federal</span>
+                    <span class="navbar-left__bottom--sendto">Enviar a: </span>
+                    <span class="navbar-left__bottom--location">Capital Federal</span>
                 </a>
             </div>
             <div class="navbar-mid">
@@ -26,6 +26,31 @@
                 </div>
                 <div class="navbar-mid__menu">
                     <a href="#" class="navbar-bottom__menu--categorias">Categorias</a>
+
+                    <nav class="navcategory">
+                        <a href="#">DESPLEGATE</a>
+                        <ul>
+                            <li>
+                                <a href="#">Vehículos</a>
+                                <a href="#">Inmuebles</a>
+                                <a href="#">Tecnología</a>
+                                <a href="#">Hogar y Electrodomésticos</a>
+                                <a href="#">Herramienta e Industrias</a>
+                                <a href="#">Juguetes y Bebés</a>
+                                <a href="#">Deporte y Aire Libre</a>
+                                <a href="#">Libros</a>
+                                <a href="#">Accesorios para Vehículos/a>
+                                <a href="#">Moda</a>
+                                <a href="#">Belleza y Cuidado Personal</a>
+                                <a href="#">Supermercado</a>
+                                <a href="#">Agro</a>
+                                <a href="#">Servicios</a>
+                                <a href="#">Productos Sustentables</a>
+                                <a href="#">Ver Más Categorías</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
                     <a href="#" class="navbar-bottom__menu--ofertas">Ofertas</a>
                     <a href="#" class="navbar-bottom__menu--historial">Historial</a>
                     <a href="#" class="navbar-bottom__menu--supermercado">Supermercado</a>
@@ -49,19 +74,46 @@
     </section>
 
     <section class="carousel">
-        <button><a href="#imagen2">imgane2</a></button>
         <div class="carousel__container">
-            <figure>
-                <img src="/arc/carousel/carrousel1.webp" alt="oferts">
-                <img src="/arc/carousel/carrousel2.webp" alt="oferts">
-                <img src="/arc/carousel/carrousel3.webp" alt="oferts">
-                <img src="/arc/carousel/carrousel4.webp" alt="oferts">
-                <img src="/arc/carousel/carrousel5.webp" alt="oferts">
-                <img src="/arc/carousel/carrousel6.webp" alt="oferts">    
-    
-            </figure>
+            <div class="slide__img" id="image1">
+                <img class="imgs" src="/arc/carousel/carrousel1.webp" alt="oferts">
+                <a href="#image6" class="pre"></a>
+                <a href="#image2" class="nxt"></a>
+            </div>        
+            <div class="slide__img" id="image2">
+                <img class="imgs" src="/arc/carousel/carrousel2.webp" alt="oferts">
+                <a href="#image1" class="pre"></a>
+                <a href="#image3" class="nxt"></a>
+            </div>        
+            <div class="slide__img" id="image3">
+                <img class="imgs" src="/arc/carousel/carrousel3.webp" alt="oferts">
+                <a href="#image2" class="pre"></a>
+                <a href="#image4" class="nxt"></a>
+            </div>        
+            <div class="slide__img" id="image4">
+                <img class="imgs" src="/arc/carousel/carrousel4.webp" alt="oferts">
+                <a href="#image3" class="pre"></a>
+                <a href="#image5" class="nxt"></a>
+            </div>        
+            <div class="slide__img" id="image5">
+                <img class="imgs" src="/arc/carousel/carrousel5.webp" alt="oferts">
+                <a href="#image4" class="pre"></a>
+                <a href="#image6" class="nxt"></a>
+            </div>        
+            <div class="slide__img" id="image6">
+                <img class="imgs" src="/arc/carousel/carrousel6.webp" alt="oferts">
+                <a href="#image5" class="pre"></a>
+                <a href="#image1" class="nxt"></a>
+            </div>
         </div>
-
+        <div class="navdots">
+            <a href="#image1" class="dot"></a>
+            <a href="#image2" class="dot"></a>
+            <a href="#image3" class="dot"></a>
+            <a href="#image4" class="dot"></a>
+            <a href="#image5" class="dot"></a>
+            <a href="#image6" class="dot"></a>
+        </div>
     </section>
 
     <main class="main">
@@ -108,27 +160,26 @@
 
             <div class="cards__container">
                 <div class="card">
-                        <div class="ofert__card--img-container">
-                            <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
+                    <div class="ofert__card--img-container">
+                        <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
+                    </div>
+                    <div   class="ofert__card--bottom"  >
+                        <div class="ofert__card--truck-container">
+                            <svg class="ofert__card--truck-icon" viewBox="0 0 39 32">
+                                <path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
+                            </svg>            
                         </div>
-
-                        <div   class="ofert__card--bottom"  >
-                            <div class="ofert__card--truck-container">
-                                <svg class="ofert__card--truck-icon" viewBox="0 0 39 32">
-                                    <path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
-                                </svg>            
-                            </div>
-                            <div class="ofert__card--txt-container">
-                                <span class="ofert__card--discount">$43.999</span>
-                                <span class="ofert__card--price">$39.999</span>
-                                <span class="ofert__card--off">9% OFF</span>
-                                <span class="ofert__card--payment">18x $3.055,5 sin interes</span>
-                                <p class="ofert__card--description">
-                                    Samsung Libre Galaxy A51 128 Gb 4Gb Black
-                                </p>    
-                            </div>
-                        </div>
-                </div>
+                    <div class="ofert__card--txt-container">
+                        <span class="ofert__card--discount">$43.999</span>
+                        <span class="ofert__card--price">$39.999</span>
+                        <span class="ofert__card--off">9% OFF</span>
+                        <span class="ofert__card--payment">18x $3.055,5 sin interes</span>
+                        <p class="ofert__card--description">
+                            Samsung Libre Galaxy A51 128 Gb 4Gb Black
+                        </p>    
+                    </div>
+                    </div>
+                    </div>
                 <div class="card">
                     <div class="ofert__card--img-container">
                         <img src="/arc/auris.webp" alt="Alto celular Amigo" class="ofert__card--img">
@@ -985,8 +1036,10 @@
             <a href="#" class="regret--link">Ver contratos de adhesion - Ley N.° 24.240 de Defensa del Consumidor</a>
         </div>
     </section>
+
+   
+    <button button class="information--button">Más información</button>
     <section class="information">
-        <button>Más información</button>
         <div class="information__container">
             <div class="information__list">
                 <h3 class="information__list--title">Acerda de</h3>
