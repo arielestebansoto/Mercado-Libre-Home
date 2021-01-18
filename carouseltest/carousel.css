@@ -95,6 +95,7 @@
     display: flex;
     overflow-x: scroll;
     counter-reset: item;
+
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
   }
