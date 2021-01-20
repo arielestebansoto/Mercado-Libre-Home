@@ -56,14 +56,14 @@
 }
 .header {
     display: grid;
-    grid-template-columns: minmax(150px, 1fr) 6fr 3fr;
+    grid-template-columns: 180px 3fr 1fr;
 
     width: 100%;
     max-width: 1200px;
     height: 92px;
 
     margin: 0 auto;
-    padding-top: 10px;
+    padding: 10px 10px 0;
 }
 .navbar-left {
     display: grid;
@@ -204,6 +204,8 @@
 .navbar-right {
     display: grid;
     grid-template-rows: 1fr 1fr;
+
+    padding-right: 10px;
 
     width: 100%;
     height: 100%;
@@ -711,6 +713,8 @@
     
     max-width: 1200px;
     margin: 0 auto;
+
+    overflow: hidden;
 }
 .stores-titles {
     max-width: 1200px;
@@ -1214,11 +1218,11 @@
     }
     .header-mobile__nav {
         display: grid;
-        grid-template-columns: min-content 1fr min-content min-content;
+        grid-template-columns: min-content  minmax(min-content, 1fr) repeat(2, min-content);
 
         position: relative;
 
-        padding: 0 10px;
+        padding: 6px 10px 4px;
     }
     .logo-ml-small {
         align-self: center;
@@ -1238,7 +1242,7 @@
         height: 32px;
         
         background: var(--color-white);
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
         border-radius: 3px;
     }
     .search input{
@@ -1266,10 +1270,12 @@
         height: 100%;
     }
     .btn-menu {
-        width: 45px;
-        height: 45px;
+        display: flex;
 
-        padding: 12px;
+        padding: 9px;
+        width: 40px;
+        height: 40px;
+
         background: rgba(0,0,0,0);
         border: none;
     }
@@ -1284,10 +1290,10 @@
         height: auto;
     }
     .shop {
+        padding: 9px;
         display: inline-block;
-        width: 45px;
-        height: 45px;
-        padding: 12px;
+        width: 40px;
+        height: 40px;
     }
     .shop img {
         width: 100%;
@@ -1317,7 +1323,7 @@
         position: absolute;
         left:  0;
 
-        margin-left: 5px;
+        margin-left: 10px;
 
         width: 15px;
         height: 15px;
@@ -1330,13 +1336,14 @@
         position: absolute;
         right: 0;
         
-        margin-right: 5px;
+        margin-right: 20px;
 
         width: 10px;
         height: 10px;
 
         content: "";
-        background: url(arc/right-arrow.svg);   
+        background: url(arc/right-arrow.svg);
+        filter: opacity(.3)
     }
     .nav-mobile {
         display: none;
@@ -1407,12 +1414,30 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 39px;        
+        height: 39px;
+        
+        margin: 4px 0;
     }
     .nav-mobile ul a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
         font-size: 14px;
         padding: 8px 20px 8px 26px;
         text-decoration: none;
+    }
+    .nav-mobile ul a svg {
+        margin-right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    .nav-mobile ul a:hover {
+        background: var(--color-lightgrey1);
+        color: var(--color-blue1);  
+    }
+    .nav-mobile ul a:hover > svg {
+        fill: var(--color-blue1);
     }
 
     .categories__container {
@@ -1425,12 +1450,18 @@
     .footer__app {
         display: none;
     }
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
     .footer__info {
+        justify-self: center;
         padding: 0 30px;
     }
 }
 @media (max-width: 938px) {
-    .mediosdepago__item:nth-child(3) {
+    .mediosdepago__container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }.mediosdepago__item:nth-child(3) {
         display: none
     }
 }
@@ -1449,6 +1480,11 @@
     }
 }
 @media (max-width: 768px) {
+    .mediosdepago__container {
+        grid-template-columns: 1fr 1fr;
+    }.mediosdepago__item:nth-child(2) {
+        display: none;
+    }
     .categories__container {
         grid-template-columns: repeat(3, 1fr);
     } .category__box:nth-child(-n+8) {
@@ -1456,6 +1492,21 @@
     }
 }
 @media (max-width: 564px) {
+    .mediosdepago__container {
+        grid-template-columns: 1fr;
+    }.mediosdepago__item:last-child {
+        display: none;
+    }.mediosdepago__item:first-child {
+        justify-self: center;
+        width: inherit;
+    }
+    .info-container {
+        display: block;
+    }
+    .info-container .info:nth-child(2):before,
+    .info-container .info:nth-child(2):after {
+        display: none;
+    }
     .categories__container {
         grid-template-columns: repeat(2, 1fr);
     } .category__box:nth-child(-n+10) {
