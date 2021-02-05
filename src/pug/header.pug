@@ -1,0 +1,28 @@
+section.header-container
+    header.header
+        .navbar-left
+            div
+                a.logo-ml(href='/') Logo
+            a.navbar-left__bottom(href="/")
+                img(src="/", alt="")
+                span.navbar-left_bottom--sento Enviar a:
+                span.navbar-left_bottom--location Capital Federal
+        .navbar-mid
+            .navbar-mid__search
+                input(
+                    type = 'text'
+                    placeholder= 'Buscar productos, marcas y más...'
+                )
+                button
+                    img(src="", alt="")
+            include navbar-mid__menu.pug
+        .navbar-right
+            a(href='#')
+                img(src="../arc/comprahoy.png", alt="Comprahoy")
+            div
+                a(href='#') Crea tu cuenta
+                a(href='#') Ingresa
+                a(href='#') Mis compras
+                a(href='#')
+                    img(src="../arc/carro-de-la-compra.png", alt="")
+    include header-mobile.pug

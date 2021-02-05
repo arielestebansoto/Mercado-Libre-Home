@@ -1,0 +1,9 @@
+- var items = ['Categoria', 'Ofertas', 'Historia', 'Supermercado', 'Tiendas Oficiales', 'Vender', 'Ayuda']
+  
+.navbar-mid__menu
+    nav
+        include navcategory.pug
+        ul
+            each val in items 
+                li= val
+                    a(href="#")
