@@ -4,7 +4,7 @@ section.header-container
             div
                 a.logo-ml(href='/') Logo
             a.navbar-left__bottom(href="/")
-                img(src="/", alt="")
+                img(src="/arc/placeholder.png", alt="")
                 span.navbar-left_bottom--sento Enviar a:
                 span.navbar-left_bottom--location Capital Federal
         .navbar-mid
@@ -14,15 +14,15 @@ section.header-container
                     placeholder= 'Buscar productos, marcas y más...'
                 )
                 button
-                    img(src="", alt="")
+                    img(src="../arc/loupe.png", alt="")
             include navbar-mid__menu.pug
         .navbar-right
-            a(href='#')
+            a(href='#').navbar-right--payment
                 img(src="../arc/comprahoy.png", alt="Comprahoy")
-            div
+            div.navbar-bottom__login 
                 a(href='#') Crea tu cuenta
                 a(href='#') Ingresa
                 a(href='#') Mis compras
-                a(href='#')
+                a(href='#').navbar-bottom__login--shop
                     img(src="../arc/carro-de-la-compra.png", alt="")
     include header-mobile.pug

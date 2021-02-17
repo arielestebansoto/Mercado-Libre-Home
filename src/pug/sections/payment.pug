@@ -1,0 +1,47 @@
+-var url = 'arc/'
+mixin payment(clase, img, title, link)
+        div(class=`payment__item payment__${clase}`)
+            a.payment__item--icon
+                img(src= '/' +url +img)
+            h2.payment__item--title #{title}
+            a(href="#").payment__item--seemore #{link}
+
+section.payment
+    div.payment__container
+        +payment('credit','credit-card.svg', 'Tarjeta de credito','Ver promociones bancarias')
+        +payment('debit','debit-card.svg', 'Tarjeta de debito','Ver mas')
+        +payment('cash','payment-agreement.svg', 'Efectivo','Ver mas')
+        +payment('view-more','view-more.svg', 'Mas medios de pago','Ver todos')
+
+//-
+        div.mediosdepago__credit mediosdepago__item
+            <a href="#" class="mediosdepago--icon">
+            <img src="arc/credit-card.svg" >
+            </a>
+            <h2 class="mediosdepago--title">Tarjeta de credito</h2>
+            <a href="" class="mediosdepago__credit--seemore mediosdepago--seemore">Ver promociones bancarias</a>
+    
+            <div class="mediosdepago__debit mediosdepago__item">
+                <a href="#" class="mediosdepago--icon">
+                    <img src="/arc/debit-card.svg">
+                </a>               
+                <h2 class="mediosdepago--title">Tarjeta de debito</h2>
+                <a href="" class="mediosdepago__debit--seemore mediosdepago--seemore">Ver mas</a>
+            </div> 
+    
+                <div class="mediosdepago__cash mediosdepago__item">
+                    <a href="#" class="mediosdepago--icon">
+                    <img src="/arc/payment-agreement.svg">
+                    </a>
+                    <h2 class="mediosdepago--title">Efectivo</h2>
+                    <a href="" class="mediosdepago__cash--seemore mediosdepago--seemore">Ver mas</a>
+                </div> 
+    
+                <div class="mediosdepago__view-more mediosdepago__item">
+                    <a href="#" class="mediosdepago--icon">
+                    <img src="/arc/view-more.svg" class="mediosdepago__medios--icon">  
+                    </a>
+                    <h2 class="mediosdepago--title">Mas medios de pago</h2>
+                    <a href="" class="mediosdepago--seemore">Ver todos</a>
+                </div> 
+            </div>

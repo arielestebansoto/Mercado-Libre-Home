@@ -10,12 +10,12 @@
     <section class="header-container">
       <header class="header">
         <div class="navbar-left">
-          <div><a class="logo-ml" href="/">Logo</a></div><a class="navbar-left__bottom" href="/"><img src="/" alt=""/><span class="navbar-left_bottom--sento">Enviar a:</span><span class="navbar-left_bottom--location">Capital Federal</span></a>
+          <div><a class="logo-ml" href="/">Logo</a></div><a class="navbar-left__bottom" href="/"><img src="/arc/placeholder.png" alt=""/><span class="navbar-left_bottom--sento">Enviar a:</span><span class="navbar-left_bottom--location">Capital Federal</span></a>
         </div>
         <div class="navbar-mid">
           <div class="navbar-mid__search">
             <input type="text" placeholder="Buscar productos, marcas y más..."/>
-            <button><img src="" alt=""/></button>
+            <button><img src="../arc/loupe.png" alt=""/></button>
           </div>
           <div class="navbar-mid__menu">
             <nav>
@@ -216,19 +216,19 @@
                 </ul>
               </nav>
               <ul>
-                <li>Categoria<a href="#"></a></li>
-                <li>Ofertas<a href="#"></a></li>
-                <li>Historia<a href="#"></a></li>
-                <li>Supermercado<a href="#"></a></li>
-                <li>Tiendas Oficiales<a href="#"></a></li>
-                <li>Vender<a href="#"></a></li>
-                <li>Ayuda<a href="#"></a></li>
+                <li><a href="#">Categoria</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#">Supermercado</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
               </ul>
             </nav>
           </div>
         </div>
-        <div class="navbar-right"><a href="#"><img src="../arc/comprahoy.png" alt="Comprahoy"/></a>
-          <div><a href="#">Crea tu cuenta</a><a href="#">Ingresa</a><a href="#">Mis compras</a><a href="#"><img src="../arc/carro-de-la-compra.png" alt=""/></a></div>
+        <div class="navbar-right"><a class="navbar-right--payment" href="#"><img src="../arc/comprahoy.png" alt="Comprahoy"/></a>
+          <div class="navbar-bottom__login"> <a href="#">Crea tu cuenta</a><a href="#">Ingresa</a><a href="#">Mis compras</a><a class="navbar-bottom__login--shop" href="#"><img src="../arc/carro-de-la-compra.png" alt=""/></a></div>
         </div>
       </header>
       <header class="header-mobile">
@@ -241,12 +241,96 @@
         </nav>
         <nav class="nav-mobile">
           <div class="nav-mobile__login">
-            <div class="nav-mobile__user">
-              <svg class="nav-header-menu-mobile-guest-icon" width="28" height="35" xmlns="http://www.w3.org/2000/svgpath d=" M27.343="M27.343" 33.706l-1.356.64A13.25="33.706l-1.356.64A13.25" 13.25="13.25" 0="0" fill="#BBB" fill-rule="nonzero/path/svg"> </svg>
-            </div>
+            <div class="nav-mobile__user"></div>
           </div>
         </nav>
       </header>
     </section>
+    <section class="carousel">
+      <ol class="carousel__viewport">
+        <li class="carousel_slide"><img class="imgs" id="imgage1" src="/arc/carousel/carrousel1.webp" alt="papu"/><a class="pre" id="image3"></a><a class="nxt" id="image2"></a></li>
+        <li class="carousel_slide"><img class="imgs" id="imgage1" src="/arc/carousel/carrousel2.webp" alt="papu"/><a class="pre" id="image3"></a><a class="nxt" id="image2"></a></li>
+        <li class="carousel_slide"><img class="imgs" id="imgage1" src="/arc/carousel/carrousel3.webp" alt="papu"/><a class="pre" id="image3"></a><a class="nxt" id="image2"></a></li>
+      </ol>
+      <div class="navdots"></div><a class="dot" href="#image1"></a><a class="dot" href="#image2"></a><a class="dot" href="#image3"></a>
+    </section>
+    <main>
+      <section class="payment">
+        <div class="payment__container">
+                <div class="payment__item payment__credit"><a class="payment__item--icon"><img src="/arc/credit-card.svg"/></a>
+                  <h2 class="payment__item--title">Tarjeta de credito</h2><a class="payment__item--seemore" href="#">Ver promociones bancarias</a>
+                </div>
+                <div class="payment__item payment__debit"><a class="payment__item--icon"><img src="/arc/debit-card.svg"/></a>
+                  <h2 class="payment__item--title">Tarjeta de debito</h2><a class="payment__item--seemore" href="#">Ver mas</a>
+                </div>
+                <div class="payment__item payment__cash"><a class="payment__item--icon"><img src="/arc/payment-agreement.svg"/></a>
+                  <h2 class="payment__item--title">Efectivo</h2><a class="payment__item--seemore" href="#">Ver mas</a>
+                </div>
+                <div class="payment__item payment__view-more"><a class="payment__item--icon"><img src="/arc/view-more.svg"/></a>
+                  <h2 class="payment__item--title">Mas medios de pago</h2><a class="payment__item--seemore" href="#">Ver todos</a>
+                </div>
+        </div>
+      </section>
+      <section class="ofert">
+        <div class="ofert-titles">
+          <h2 class="ofert__title">Ofertas</h2><a href="#">Ver todas    </a>
+        </div>
+              <div class="card">
+                <div class="ofert__card--img-container"><img class="ofert__card--img" src="../arc/products/motorolaone.webp"/></div>
+                <div class="ofert__card--bottom">
+                  <div class="ofert__card--truck-container">
+                    <svg class="ofert__card--truck-icon"></svg>
+                  </div>
+                  <div class="ofert__card--txt-container"><span class="ofert__card--discount"> </span><span class="ofert__card--price">$29.999</span><span class="ofert__card--off"> </span><span class="ofert__card--payment">3x $9.999,67 sin interes</span>
+                    <p class="ofert__card--description">Motorola One Fusion 128 Gb Emerald Green 4 Gb Ram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="ofert__card--img-container"><img class="ofert__card--img" src="../arc/products/motorolaone.webp"/></div>
+                <div class="ofert__card--bottom">
+                  <div class="ofert__card--truck-container">
+                    <svg class="ofert__card--truck-icon"></svg>
+                  </div>
+                  <div class="ofert__card--txt-container"><span class="ofert__card--discount"> </span><span class="ofert__card--price">$29.999</span><span class="ofert__card--off"> </span><span class="ofert__card--payment">3x $9.999,67 sin interes</span>
+                    <p class="ofert__card--description">Motorola One Fusion 128 Gb Emerald Green 4 Gb Ram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="ofert__card--img-container"><img class="ofert__card--img" src="../arc/products/motorolaone.webp"/></div>
+                <div class="ofert__card--bottom">
+                  <div class="ofert__card--truck-container">
+                    <svg class="ofert__card--truck-icon"></svg>
+                  </div>
+                  <div class="ofert__card--txt-container"><span class="ofert__card--discount"> </span><span class="ofert__card--price">$29.999</span><span class="ofert__card--off"> </span><span class="ofert__card--payment">3x $9.999,67 sin interes</span>
+                    <p class="ofert__card--description">Motorola One Fusion 128 Gb Emerald Green 4 Gb Ram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="ofert__card--img-container"><img class="ofert__card--img" src="../arc/products/motorolaone.webp"/></div>
+                <div class="ofert__card--bottom">
+                  <div class="ofert__card--truck-container">
+                    <svg class="ofert__card--truck-icon"></svg>
+                  </div>
+                  <div class="ofert__card--txt-container"><span class="ofert__card--discount"> </span><span class="ofert__card--price">$29.999</span><span class="ofert__card--off"> </span><span class="ofert__card--payment">3x $9.999,67 sin interes</span>
+                    <p class="ofert__card--description">Motorola One Fusion 128 Gb Emerald Green 4 Gb Ram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="ofert__card--img-container"><img class="ofert__card--img" src="../arc/products/motorolaone.webp"/></div>
+                <div class="ofert__card--bottom">
+                  <div class="ofert__card--truck-container">
+                    <svg class="ofert__card--truck-icon"></svg>
+                  </div>
+                  <div class="ofert__card--txt-container"><span class="ofert__card--discount"> </span><span class="ofert__card--price">$29.999</span><span class="ofert__card--off"> </span><span class="ofert__card--payment">3x $9.999,67 sin interes</span>
+                    <p class="ofert__card--description">Motorola One Fusion 128 Gb Emerald Green 4 Gb Ram</p>
+                  </div>
+                </div>
+              </div>
+      </section>
+    </main>
   </body>
 </html>
