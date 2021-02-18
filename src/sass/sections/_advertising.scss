@@ -1,4 +1,3 @@
-
 .advertising {
     margin: 60px 0;
     padding: 0 10px;
@@ -22,7 +21,7 @@
     font-size: 26px;
     color: var(--color-darkgrey2);
 }
-.advertising__container {
+.advertising__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -37,11 +36,11 @@
 
     overflow: hidden;
 }
-.advertising__container:hover {
+.advertising__card:hover {
     transition: box-shadow .1s ease-out;
     box-shadow: 0 7px 16px 0 rgba(0,0,0,.2);
 }
-.advertising__info {
+.advertising_card__info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -50,16 +49,16 @@
     margin: 0 32px 0 0;
     padding: 32px 0 32px 32px;
 }
-.advertising__info--title {
+.advertising_card__info h2 {
     font-size: 12px;
     letter-spacing: 4px;
 }
-.advertising__info--description {
+.advertising_card__info h3 {
     text-align: left;
     font-size: 28px;
     font-weight: bold;
 }
-.advertising__info--seemore {
+.advertising_card__info a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,13 +76,12 @@
     color: var(--color-white);
     background-color: var(--color-blue1);
 }
-.advertising__info--seemore:hover {
+.advertising_card__info a:hover {
     transition: ease-out .2s background-color;
     background-color: var(--color-blue2);
 }
-
-.advertising__info--img {
-    width: auto;
-    height: 100%;
+.advertising_card__img img{
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
