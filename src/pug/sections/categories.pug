@@ -1,6 +1,9 @@
+//https://www.petercollingridge.co.uk/tutorials/svg/interactive/javascript/
+-var url = '../arc/category/'
+-var src = 'armchair.svg'
 mixin category__box(title)
         .category__box
-            svg.category__box--icon 
+            img(src=`${url}${src}`).category__box--icon 
             .category__box--title
                 h2 #{title}  
 
@@ -9,6 +12,12 @@ section.categories
         h2 Categorías populares
     .categories__container  
         +category__box('Autos, Motos y Otros')
+        +category__box('Autos, Motos y Otros')
+        +category__box('Autos, Motos y Otros')
+        +category__box('Autos, Motos y Otros')
+        +category__box('Autos, Motos y Otros')
+        +category__box('Autos, Motos y Otros')
+        +category__box('Autos, Motos y Otros')        +category__box('Autos, Motos y Otros')
         +category__box('Autos, Motos y Otros')
         +category__box('Autos, Motos y Otros')
         +category__box('Autos, Motos y Otros')

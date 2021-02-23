@@ -870,7 +870,7 @@
   align-self: flex-end;
   width: 48px;
   height: 48px;
-  fill: var(--color-blue1);
+  color: blue;
 }
 
 .category__box--title h2 {
