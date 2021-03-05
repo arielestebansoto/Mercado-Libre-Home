@@ -870,7 +870,11 @@
   align-self: flex-end;
   width: 48px;
   height: 48px;
-  color: blue;
+  fill: blue;
+}
+
+svg {
+  fill: blue;
 }
 
 .category__box--title h2 {
