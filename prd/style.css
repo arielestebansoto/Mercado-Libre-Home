@@ -857,15 +857,17 @@
   background-color: var(--color-blue1);
 }
 
-.category__box:hover > .category__box--icon {
+.category__box:hover > .category__box--svg-container svg {
   fill: var(--color-white);
+  fill: white;
 }
 
-.category__box:hover > .category__box--title h2 {
+.category__box:hover > .category__box--title {
   color: var(--color-white);
+  color: white;
 }
 
-.category__box--icon {
+.category__box--svg-container {
   justify-self: center;
   align-self: flex-end;
   width: 48px;
@@ -877,7 +879,7 @@ svg {
   fill: blue;
 }
 
-.category__box--title h2 {
+.category__box--title {
   margin: 10px 0 0;
   text-align: center;
   font-size: 15px;
