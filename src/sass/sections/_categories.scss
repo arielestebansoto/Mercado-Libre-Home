@@ -45,7 +45,7 @@
     color: var(--color-white);
     color: white;
 }
-.category__box--svg-container {
+ .category__box--svg-container {
     justify-self: center;
     align-self: flex-end;
     width: 48px;
@@ -53,8 +53,10 @@
     
     fill: blue;
     //fill: var(--color-blue1);
-}
-svg {
+} 
+.category__box--svg-container svg {
+    width: 100%;
+    height: 100%;
     fill: blue;
 }
 .category__box--title {
