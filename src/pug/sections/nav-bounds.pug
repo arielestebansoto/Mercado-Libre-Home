@@ -1,0 +1,26 @@
+-var list1 = ['Mercado Libre', 'Investor Relations', 'Tendencias']
+-var list2 = ['Developers', 'Mercado de Pago', 'Mercado Shops', 'Mercado Envios', 'Mercado Ads', 'Mercado Libre Ideas']
+-var list3 = ['Comprar', 'Vender', 'Resolución de problemas', 'Centro de Seguridad']
+-var list4 = ['Twitter', 'Facebook', 'Instagram', 'Youtube']
+-var list5 = ['Ingresa', 'Vender']
+-var list6 = ['HBO GO']
+
+-var lista1 = ['Acerca de', list1]
+
+mixin information_list(title, list)
+    .information_list
+        h3 #{title}
+        each i in list
+            a(href="#").information__list--link= i
+
+section.information
+    button.information--button Más información 
+        i
+    .information__content
+        .information__container
+            +information_list('Acerca de', list1)
+            +information_list('Otros Sitios', list2)
+            +information_list('Ayuda', list3)
+            +information_list('Redes Sociales', list4)
+            +information_list('Mi Cuenta', list5)
+            +information_list('Mercado Puntos', list6)

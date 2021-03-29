@@ -1,0 +1,18 @@
+-var url = '../arc/advertising/'
+
+mixin advertising_card(title, subtitle, subtitleBold, button, image)
+    .advertising__card
+        .advertising_card__info 
+            h2 #{title}
+            h3 #{subtitle} 
+            br/ #{subtitleBold} 
+            a(href="#").advertising_card__info--seemore #{button}
+        .advertising_card__img
+            img(src=`${url}${image}`)
+
+section.advertising
+    .advertising-titles
+        h2 Descubri
+    .advertisings__container
+        +advertising_card('HERRAMIENTAS', 'ESO QUE', 'BUSCAS', 'Ver más', 'taladro.webp')
+        +advertising_card('ESPECIAL AUTOPARTES', 'EQUIPATE A VOS', 'Y A TU VEHÍCULO', 'Ver más', 'wheel.webp')
