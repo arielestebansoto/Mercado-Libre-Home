@@ -1,0 +1,30 @@
+-var carousel_img = []
+-var url = '/arc/carousel/carrousel'
+-var format = '.webp'
+-var numero = 1
+section.carousel
+    ol.carousel__viewport
+        - for (var i = 1; i < 4; i++)
+            li.carousel_slide
+                img.imgs#imgage1(src= url + i + format, alt="papu")
+                a.pre#image3
+                a.nxt#image2
+    div.navdots
+    -for (var i = 1; i < 4; i++)
+        a.dot(href="#image"+ i)
+    //-        <li class="carousel_slide">                    
+                <img id="image1" class="imgs" src="/arc/carousel/carrousel1.webp" alt="oferts">
+                <a href="#image3" class="pre"></a>
+                <a href="#image2" class="nxt"></a>  
+            </li>
+            
+            <li class="carousel_slide">
+                    <img id="image2" class="imgs" src="/arc/carousel/carrousel2.webp" alt="oferts">
+                    <a href="#image1" class="pre"></a>
+                    <a href="#image3" class="nxt"></a>
+            </li>
+            <li class="carousel_slide">
+                <img id="image3" class="imgs" src="/arc/carousel/carrousel3.webp" alt="oferts">
+                <a href="#image2" class="pre"></a>
+                <a href="#image1" class="nxt"></a>
+            </li>  
